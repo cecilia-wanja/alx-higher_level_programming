@@ -2,6 +2,6 @@
 def islower(c):
     for i in c:
         if i.lower():
-            return True 
+            return True
         else:
             return False
