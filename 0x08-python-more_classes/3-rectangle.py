@@ -63,4 +63,3 @@ class Rectangle:
                 string = string + '#'
             string = string + '\n'
         return string[:-1]
-
