@@ -66,7 +66,7 @@ class Rectangle:
             return string
         for r in range(height):
             for c in range(width):
-                string = string +  str(symbol)
+                string = string + str(symbol)
             string = string + '\n'
         return string[:-1]
 
