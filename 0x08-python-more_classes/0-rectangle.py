@@ -7,4 +7,6 @@ Class that defines a triangle
 
 
 class Rectangle:
-    pass
+    def __init__(self):
+        """Initializes the class"""
+        pass
