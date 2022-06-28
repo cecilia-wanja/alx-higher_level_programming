@@ -1,0 +1,30 @@
+===================================
+Using the ``0-add_integer`` module
+===================================
+``add_integer`` returns the sum of its arguments which have to be integers using the `+` operator.
+
+Positive numbers:
+    >>> add_integer = __import__("0-add_integer").add_integer
+    >>> add_integer(2, 3)
+        5
+
+Negative numbers:
+    >>> add_integer(-2, -7)
+        -9
+
+Positive floats:
+    >>> add_integer(2.7, 1.2)
+        3
+
+Negative floats:
+    >>> add_integer(-2.7, -1.2)
+        3
+
+One argument:
+    >>> add_integer(2)
+        100
+
+Error case:
+    >>> add_integer(2, "School")
+        Traceback (most recent call last):
+        TypeError: b must be an integer
