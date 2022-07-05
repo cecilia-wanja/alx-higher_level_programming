@@ -1,0 +1,52 @@
+=============================
+``1-my_list`` module
+=============================
+
+Using ``MyList``
+---------------------
+
+Import the class:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+1. On a basic list
+
+    >>> my_list = MyList([1, 4, 2, 3, 5])
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+2. On an empty list
+
+    >>> my_list = MyList([])
+    >>> my_list.print_sorted()
+    []
+
+3. On a list with one element
+
+    >>> my_list = MyList([5])
+    >>> my_list.print_sorted()
+    [5]
+
+4. Where the first element is larger
+
+    >>> my_list = MyList([9, 4, 2, 3, 5])
+    >>> my_list.print_sorted()
+    [2, 3, 4, 5, 9]
+
+5. Non-integer
+
+    >>> my_list = MyList(['one', 'three', 'two'])
+    >>> my_list.print_sorted()
+    ['one', 'three', 'two']
+
+6. No arguments supplied
+
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+7. List has a string
+
+    >>> MyList.print_sorted([1, 4, 2, 3, "5"])
+    Traceback (most recent call last):
+    TypeError: '<' not supported between instances of 'str' and 'int'
